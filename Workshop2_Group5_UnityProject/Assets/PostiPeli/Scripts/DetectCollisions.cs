@@ -19,7 +19,7 @@ public class DetectCollisions : MonoBehaviour
 
     }
 
-    // Tuhoaa pallon kun se osuu neliöön ja antaa pisteen
+    // Tuhoaa póstin kun se osuu laatikkoon ja antaa pisteitä sen mukaan oliko oikea osoite
     private void OnCollisionEnter(Collision collision)
     {
         //Kirjelaatikko
@@ -30,14 +30,8 @@ public class DetectCollisions : MonoBehaviour
                 Destroy(collision.gameObject);
                 gameManager.UpdateScore(1);
             }
-
-            if ((collision.gameObject.tag == "Kortti"))
-            {
-                gameManager.UpdateScore(-1);
-                Destroy(collision.gameObject);
-            }
             
-            if ((collision.gameObject.tag == "Paketti"))
+            if ((collision.gameObject.tag == "Paketti") || (collision.gameObject.tag == "Kortti"))
             {
                 gameManager.UpdateScore(-1);
                 Destroy(collision.gameObject);
@@ -53,13 +47,7 @@ public class DetectCollisions : MonoBehaviour
                 gameManager.UpdateScore(1);
             }
 
-            if ((collision.gameObject.tag == "Kirje"))
-            {
-                gameManager.UpdateScore(-1);
-                Destroy(collision.gameObject);
-            }
-
-            if ((collision.gameObject.tag == "Paketti"))
+            if ((collision.gameObject.tag == "Kirje") || (collision.gameObject.tag == "Paketti"))
             {
                 gameManager.UpdateScore(-1);
                 Destroy(collision.gameObject);
@@ -75,19 +63,11 @@ public class DetectCollisions : MonoBehaviour
                 gameManager.UpdateScore(1);
             }
 
-            if ((collision.gameObject.tag == "Kirje"))
-            {
-                gameManager.UpdateScore(-1);
-                Destroy(collision.gameObject);
-            }
-
-            if ((collision.gameObject.tag == "Kortti"))
+            if ((collision.gameObject.tag == "Kirje") || (collision.gameObject.tag == "Kortti"))
             {
                 gameManager.UpdateScore(-1);
                 Destroy(collision.gameObject);
             }
         }
-
-
     }
 }

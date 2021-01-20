@@ -10,6 +10,7 @@ TagManager:
   - KirjeLaatikko
   - KorttiLaatikko
   - PakettiLaatikko
+  - Lattia
   layers:
   - Default
   - TransparentFX
