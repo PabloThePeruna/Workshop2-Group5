@@ -5,7 +5,7 @@ using UnityEngine;
 public class DetectCollisions : MonoBehaviour
 {
 
-    private  GameManager gameManager;
+    private GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +30,7 @@ public class DetectCollisions : MonoBehaviour
                 Destroy(collision.gameObject);
                 gameManager.UpdateScore(1);
             }
-            
+
             if ((collision.gameObject.tag == "Paketti") || (collision.gameObject.tag == "Kortti"))
             {
                 gameManager.UpdateScore(-1);
@@ -69,5 +69,18 @@ public class DetectCollisions : MonoBehaviour
                 Destroy(collision.gameObject);
             }
         }
+
+        //Lattia. Jos putoaa lattialle, tulee miinuspiste
+        if (gameObject.tag == "Lattia")
+        {
+            if ((collision.gameObject.tag == "Paketti") || (collision.gameObject.tag == "Kirje") || (collision.gameObject.tag == "Kortti"))
+            {
+                gameManager.UpdateScore(-1);
+                Destroy(collision.gameObject);
+            }
+
+        }
+    
+        
     }
 }
