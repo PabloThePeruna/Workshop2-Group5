@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Kirje
   - Postiluukku
+  - KirjeLuukku
+  - PakettiLuukku
+  - KorttiLuukku
   layers:
   - Default
   - TransparentFX

@@ -296,6 +296,58 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 6.07, y: 0, z: 0}
+--- !u!1 &446129487 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7aef06da75022914fa6cfbb27c5067de,
+    type: 3}
+  m_PrefabInstance: {fileID: 1183034615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &446129491 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7aef06da75022914fa6cfbb27c5067de,
+    type: 3}
+  m_PrefabInstance: {fileID: 1183034615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &446129492
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446129487}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1260040065950318279, guid: 7aef06da75022914fa6cfbb27c5067de, type: 3}
+--- !u!1 &579098405 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7aef06da75022914fa6cfbb27c5067de,
+    type: 3}
+  m_PrefabInstance: {fileID: 1198558726}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &579098409 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7aef06da75022914fa6cfbb27c5067de,
+    type: 3}
+  m_PrefabInstance: {fileID: 1198558726}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &579098410
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579098405}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1260040065950318279, guid: 7aef06da75022914fa6cfbb27c5067de, type: 3}
 --- !u!1001 &904979065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -370,6 +422,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c32ff671b784af4cb7c4e8afc635258, type: 3}
+--- !u!1 &955427405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 955427406}
+  - component: {fileID: 955427407}
+  - component: {fileID: 955427408}
+  m_Layer: 0
+  m_Name: ScoreColliderKortti
+  m_TagString: KorttiLuukku
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &955427406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955427405}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2015841726}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &955427407
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955427405}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6343643, y: 0.6523453, z: 0.6523274}
+  m_Center: {x: 0, y: 0.34970158, z: 0}
+--- !u!114 &955427408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955427405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f314b310e15dd24fa4a200daf768a01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963170942
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,6 +571,63 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1011211218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1011211219}
+  - component: {fileID: 1011211220}
+  - component: {fileID: 1011211221}
+  m_Layer: 0
+  m_Name: ScoreColliderKirje
+  m_TagString: KirjeLuukku
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1011211219
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011211218}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 446129491}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1011211220
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011211218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6343643, y: 0.6523453, z: 0.6523274}
+  m_Center: {x: 0, y: 0.34970158, z: 0}
+--- !u!114 &1011211221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011211218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f314b310e15dd24fa4a200daf768a01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1011712092
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -472,7 +638,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 1fe9470a32ee4414bb7e4f3718dbac3e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1fe9470a32ee4414bb7e4f3718dbac3e,
         type: 3}
@@ -610,7 +776,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1183034615
 PrefabInstance:
@@ -622,7 +788,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7aef06da75022914fa6cfbb27c5067de,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7aef06da75022914fa6cfbb27c5067de,
         type: 3}
@@ -698,6 +864,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KirjeLaatikko
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7aef06da75022914fa6cfbb27c5067de,
+        type: 3}
+      propertyPath: m_TagString
+      value: Postiluukku
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7aef06da75022914fa6cfbb27c5067de, type: 3}
@@ -782,6 +953,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PakettiLaatikko
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7aef06da75022914fa6cfbb27c5067de,
+        type: 3}
+      propertyPath: m_TagString
+      value: Postiluukku
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7aef06da75022914fa6cfbb27c5067de, type: 3}
@@ -878,7 +1054,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1230709040
 BoxCollider:
@@ -893,6 +1069,63 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 0.1, z: 10.016016}
   m_Center: {x: 0, y: 0, z: -0.008008003}
+--- !u!1 &1547158294
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1547158295}
+  - component: {fileID: 1547158296}
+  - component: {fileID: 1547158297}
+  m_Layer: 0
+  m_Name: ScoreColliderPaketti
+  m_TagString: PakettiLuukku
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1547158295
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547158294}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 579098409}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1547158296
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547158294}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6343643, y: 0.6523453, z: 0.6523274}
+  m_Center: {x: 0, y: 0.34970158, z: 0}
+--- !u!114 &1547158297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547158294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f314b310e15dd24fa4a200daf768a01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1566173813
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,7 +1168,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1637895323
 PrefabInstance:
@@ -947,7 +1180,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7aef06da75022914fa6cfbb27c5067de,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7aef06da75022914fa6cfbb27c5067de,
         type: 3}
@@ -1018,6 +1251,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KorttiLaatikko
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7aef06da75022914fa6cfbb27c5067de,
+        type: 3}
+      propertyPath: m_TagString
+      value: Postiluukku
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7aef06da75022914fa6cfbb27c5067de, type: 3}
@@ -1372,7 +1610,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1963717940
 MonoBehaviour:
@@ -1386,6 +1624,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f314b310e15dd24fa4a200daf768a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2015841722 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7aef06da75022914fa6cfbb27c5067de,
+    type: 3}
+  m_PrefabInstance: {fileID: 1637895323}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2015841726 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7aef06da75022914fa6cfbb27c5067de,
+    type: 3}
+  m_PrefabInstance: {fileID: 1637895323}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2015841727
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015841722}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1260040065950318279, guid: 7aef06da75022914fa6cfbb27c5067de, type: 3}
 --- !u!1 &2034301636
 GameObject:
   m_ObjectHideFlags: 0
@@ -1488,7 +1752,7 @@ PrefabInstance:
     - target: {fileID: 2211788924364016726, guid: af27295e4ada6cd49a2f30394ff036c2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2211788924364016726, guid: af27295e4ada6cd49a2f30394ff036c2,
         type: 3}
@@ -1561,7 +1825,7 @@ GameObject:
   - component: {fileID: 2142265190}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Postiluukku
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1639,7 +1903,7 @@ RectTransform:
   m_Children:
   - {fileID: 1767851180}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
