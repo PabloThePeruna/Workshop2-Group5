@@ -19,10 +19,10 @@ public class DetectCollisions : MonoBehaviour
         
     }
 
-    // Tuhoaa pallon kun se osuu neliöön ja antaa pisteen
+    // Tuhoaa kirjeen, paketin tai kortin kun se osuu postilaatikkoon ja antaa pisteen
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Kirje")
+        if ((collision.gameObject.tag == "Kirje") || (collision.gameObject.tag == "Kortti") || (collision.gameObject.tag == "Paketti"))
             Destroy(collision.gameObject);
             gameManager.UpdateScore(1);
             Debug.Log("33733101 Tampere 10");
