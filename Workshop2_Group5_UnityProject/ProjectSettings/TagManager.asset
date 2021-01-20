@@ -9,6 +9,8 @@ TagManager:
   - KirjeLuukku
   - PakettiLuukku
   - KorttiLuukku
+  - Paketti
+  - Kortti
   layers:
   - Default
   - TransparentFX
