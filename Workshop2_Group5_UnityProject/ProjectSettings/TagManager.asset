@@ -5,12 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Kirje
-  - Postiluukku
-  - KirjeLuukku
-  - PakettiLuukku
-  - KorttiLuukku
   - Paketti
   - Kortti
+  - KirjeLaatikko
+  - KorttiLaatikko
+  - PakettiLaatikko
   layers:
   - Default
   - TransparentFX

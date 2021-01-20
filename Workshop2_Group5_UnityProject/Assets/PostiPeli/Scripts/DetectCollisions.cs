@@ -16,15 +16,78 @@ public class DetectCollisions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    // Tuhoaa kirjeen, paketin tai kortin kun se osuu postilaatikkoon ja antaa pisteen
+    // Tuhoaa pallon kun se osuu neliöön ja antaa pisteen
     private void OnCollisionEnter(Collision collision)
     {
-        if ((collision.gameObject.tag == "Kirje") || (collision.gameObject.tag == "Kortti") || (collision.gameObject.tag == "Paketti"))
-            Destroy(collision.gameObject);
-            gameManager.UpdateScore(1);
-            Debug.Log("33733101 Tampere 10");
+        //Kirjelaatikko
+        if (gameObject.tag == "KirjeLaatikko")
+        {
+            if ((collision.gameObject.tag == "Kirje"))
+            {
+                Destroy(collision.gameObject);
+                gameManager.UpdateScore(1);
+            }
+
+            if ((collision.gameObject.tag == "Kortti"))
+            {
+                gameManager.UpdateScore(-1);
+                Destroy(collision.gameObject);
+            }
+            
+            if ((collision.gameObject.tag == "Paketti"))
+            {
+                gameManager.UpdateScore(-1);
+                Destroy(collision.gameObject);
+            }
+        }
+
+        //Korttilaatikko
+        if (gameObject.tag == "KorttiLaatikko")
+        {
+            if ((collision.gameObject.tag == "Kortti"))
+            {
+                Destroy(collision.gameObject);
+                gameManager.UpdateScore(1);
+            }
+
+            if ((collision.gameObject.tag == "Kirje"))
+            {
+                gameManager.UpdateScore(-1);
+                Destroy(collision.gameObject);
+            }
+
+            if ((collision.gameObject.tag == "Paketti"))
+            {
+                gameManager.UpdateScore(-1);
+                Destroy(collision.gameObject);
+            }
+        }
+
+        //Pakettilaatikko
+        if (gameObject.tag == "PakettiLaatikko")
+        {
+            if ((collision.gameObject.tag == "Paketti"))
+            {
+                Destroy(collision.gameObject);
+                gameManager.UpdateScore(1);
+            }
+
+            if ((collision.gameObject.tag == "Kirje"))
+            {
+                gameManager.UpdateScore(-1);
+                Destroy(collision.gameObject);
+            }
+
+            if ((collision.gameObject.tag == "Kortti"))
+            {
+                gameManager.UpdateScore(-1);
+                Destroy(collision.gameObject);
+            }
+        }
+
+
     }
 }
