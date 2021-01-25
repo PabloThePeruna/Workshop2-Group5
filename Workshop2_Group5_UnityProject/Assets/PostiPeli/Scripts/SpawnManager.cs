@@ -6,6 +6,7 @@ public class SpawnManager : MonoBehaviour
 {
 
     public GameObject[] postiPrefabs;
+    private GameManager gameManager;
 
     // kuinka pitkään pitää odotella että torvesta alkaa tursuamaan
     public float startDelay = 2;
@@ -17,6 +18,8 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         InvokeRepeating("SpawnRandomPosti", startDelay, spawnInterval);
+
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame

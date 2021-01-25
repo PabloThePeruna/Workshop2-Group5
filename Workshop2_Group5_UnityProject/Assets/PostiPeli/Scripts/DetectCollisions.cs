@@ -33,7 +33,7 @@ public class DetectCollisions : MonoBehaviour
 
             if ((collision.gameObject.tag == "Paketti") || (collision.gameObject.tag == "Kortti"))
             {
-                gameManager.UpdateScore(-1);
+                gameManager.UpdateMistakes(1);
                 Destroy(collision.gameObject);
             }
         }
@@ -49,7 +49,7 @@ public class DetectCollisions : MonoBehaviour
 
             if ((collision.gameObject.tag == "Kirje") || (collision.gameObject.tag == "Paketti"))
             {
-                gameManager.UpdateScore(-1);
+                gameManager.UpdateMistakes(1);
                 Destroy(collision.gameObject);
             }
         }
@@ -65,7 +65,7 @@ public class DetectCollisions : MonoBehaviour
 
             if ((collision.gameObject.tag == "Kirje") || (collision.gameObject.tag == "Kortti"))
             {
-                gameManager.UpdateScore(-1);
+                gameManager.UpdateMistakes(1);
                 Destroy(collision.gameObject);
             }
         }
@@ -75,7 +75,7 @@ public class DetectCollisions : MonoBehaviour
         {
             if ((collision.gameObject.tag == "Paketti") || (collision.gameObject.tag == "Kirje") || (collision.gameObject.tag == "Kortti"))
             {
-                gameManager.UpdateScore(-1);
+                gameManager.UpdateMistakes(1);
                 Destroy(collision.gameObject);
             }
 
