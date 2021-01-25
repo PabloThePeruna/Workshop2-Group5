@@ -30,11 +30,11 @@ public class GameManager : MonoBehaviour
 
     }
 
+    //luo satunnaisia posteja
     IEnumerator SpawnTarget()
     {
         while (isGameActive)
         {
-            Debug.Log("Toimii");
             yield return new WaitForSeconds(spawnRate);
             int index = Random.Range(0, targets.Count);
             Instantiate(targets[index]);
@@ -59,6 +59,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    //Aloittaa pelin
     public void StartGame()
     {
         isGameActive = true;
@@ -74,14 +75,22 @@ public class GameManager : MonoBehaviour
         titleScreen.gameObject.SetActive(false);
     }
 
+    //Avaa GameOver valikon
     public void GameOver()
     {
         gameOverScreen.gameObject.SetActive(true);
         isGameActive = false;
     }
 
+    //Tuo takaisin valikkoon
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    //Sammuttaa pelin
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

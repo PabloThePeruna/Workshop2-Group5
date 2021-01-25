@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour
     {
         button = GetComponent<Button>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        button.onClick.AddListener(CheckDifficulty);
+        button.onClick.AddListener(StartTheGame);
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class MainMenu : MonoBehaviour
         
     }
 
-    public void CheckDifficulty()
+    public void StartTheGame()
     {
         gameManager.StartGame();
     }
