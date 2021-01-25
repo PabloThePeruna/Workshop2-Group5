@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/PostiPeli/PostinTuoPateJokasenLuo.unity
+    guid: 55715d01ce536934aa351a90f2062771
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 292899e14b9ac944ea09aada485823b7,
       type: 2}
