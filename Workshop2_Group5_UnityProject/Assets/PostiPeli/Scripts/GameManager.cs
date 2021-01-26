@@ -44,8 +44,11 @@ public class GameManager : MonoBehaviour
     //päivittää pisteet
     public void UpdateScore(int scoreToAdd)
     {
-        score += scoreToAdd;
-        scoreText.text = "Pisteet: " + score;
+        if (isGameActive)
+        {
+            score += scoreToAdd;
+            scoreText.text = "Pisteet: " + score;
+        }
     }
 
     // päivitää virheet
