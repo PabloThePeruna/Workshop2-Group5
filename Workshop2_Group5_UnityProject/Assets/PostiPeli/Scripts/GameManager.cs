@@ -52,8 +52,8 @@ public class GameManager : MonoBehaviour
     public void UpdateMistakes(int mistakesToAdd)
     {
         mistakes += mistakesToAdd;
-        mistakesText.text = "Virheet: " + mistakes + " / 3";
-        if (mistakes == 3)
+        mistakesText.text = "Virheet: " + mistakes + " / 6";
+        if (mistakes == 6)
         {
             GameOver();
         }
